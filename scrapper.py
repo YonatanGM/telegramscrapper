@@ -15,9 +15,6 @@ Filter = {'music':InputMessagesFilterMusic, 'photo':InputMessagesFilterPhotos, '
 
 class client:
     def __init__(self, session, api_id, api_hash):
-        self.api_id = api_id
-        self.api_hash = api_hash
-        self.session = session
         self.client = TelegramClient(session, api_id, api_hash)
         self.client.start()
 
@@ -38,8 +35,5 @@ class client:
                 continue
 
         
-    
-    
-#c = client('scrapebot', 937875, '91895d720754903477ed269223104595')
-#c.scrape('t.me/hgm_123', 'AppleMusicTM', 4000) 
+   
 
